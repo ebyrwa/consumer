@@ -1,8 +1,10 @@
-﻿namespace Consumer
+﻿using System.Transactions;
+
+namespace Consumer
 {
     public class SomeConsumer
     {
-        public void ConsumeTransaction() // todo: add contracts submodule
+        public void ConsumeTransaction(Transaction transaction)
         {
             // do something with the transaction
         }
